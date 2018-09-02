@@ -18,9 +18,9 @@ I'd recommend taking a look at the `tsconfig.json`, `tslint.json` and `.prettier
 
 1. Clone this repo
 2. Run `npm install`
-3. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
-4. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
-5. **Remove the `prepare` script from your `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
+3. **Remove the `prepare` script from your `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
+4. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
+5. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
 6. Code away!
 
 ## Config overrides
