@@ -8,10 +8,11 @@ This tries to take away some of that pain for Typescript.
 ## What it sets up?
 
 This project sets up a Typescript project that uses `tslint` as the linter and `prettier` as the code formatter.
-By default, it configures `tsc` to include everything under `src`, `test`, `bin`, `lib` and `config` folders.
+I'd recommend taking a look at the `tsconfig.json`, `tslint.json` and `.prettierrc` to understand what defaults have been setup for you.
 
 #### Note
-> It does _not_ install _any_ type definitions so please do so after you follow the instructions in the next section.
+> 1. It does _not_ install _any_ type definitions so please do so after you follow the instructions in the next section.
+> 2. In `tsconfig.json`, `compilerOptions.composite`, `compilerOptions.declaration` and `compilerOptions.declarationMap` are turned on to add [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) support
 
 ## How to use this seed project
 
@@ -32,7 +33,7 @@ By default, it configures `tsc` to include everything under `src`, `test`, `bin`
 - Add `compilerOptions.typeRoots` if you want `tsc` to look into custom folders for type definitions
   - It defaults to looking for type declarations in `node_modules/@types/<module>`
       - Please note that the it does a node style resolution which means first it looks in `./node_modules/@types`, followed by `../node_modules/@types` and so on
-- `compilerOptions.composite`, `compilerOptions.declaration` and `compilerOptions.declarationMap` are turned on to add [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) support
+- To turn off [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) support, remove `compilerOptions.composite`, `compilerOptions.declaration` and `compilerOptions.declarationMap`
 
 ### `tslint.json`
 
