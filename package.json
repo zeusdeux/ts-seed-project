@@ -1,0 +1,28 @@
+{
+  "name": "ts-seed-project",
+  "version": "1.0.0",
+  "description": "A seed project that uses Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf built && tsc",
+    "watch": "tsc --watch",
+    "lint": "tslint -p ./tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --config ./.prettierrc --write \"{src,test,bin,lib,config}/**/*.{ts,json}\"",
+    "prepare": "npm i -D typescript@latest tslint@latest rimraf@latest && npm i -D --save-exact prettier@latest && npm run reset-git && npm init -y",
+    "reset-git": "rimraf ./.git"
+  },
+  "keywords": [
+    "typescript",
+    "seed"
+  ],
+  "author": "Mudit Ameta <zeusdeux@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {}
+}
