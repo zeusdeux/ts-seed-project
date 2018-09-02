@@ -17,7 +17,7 @@ I'd recommend taking a look at the `tsconfig.json`, `tslint.json` and `.prettier
 ## How to use this seed project
 
 1. Clone this repo
-2. Run `npm run prepare`
+2. Run `npm install`
 3. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
 4. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
 5. Code away!
