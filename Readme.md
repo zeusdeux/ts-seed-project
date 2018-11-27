@@ -28,6 +28,11 @@ Dev workflow nirvana swiftly ensues!
 6. Code away!
 7. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
 
+#### Note
+
+> From `package.json['jest']['roots'], remove the directories that don't exist or aren't roots.
+> For e.g., in my personal projects, I usually remove "<rootDir>/lib/" as I keep my code in `src`
+
 ## Config overrides
 
 ### `tsconfig.json`
