@@ -1,8 +1,4 @@
 {
-  "name": "ts-seed-project",
-  "version": "1.0.0",
-  "description": "A seed project that uses Typescript",
-  "main": "index.js",
   "scripts": {
     "build": "rimraf built && tsc",
     "watch": "tsc --watch",
@@ -12,13 +8,6 @@
     "prepare": "npm i -D typescript@latest tslint@latest rimraf@latest && npm i -D --save-exact prettier@latest && npm run reset-git && npm init -y && echo '# My new project' > Readme.md",
     "reset-git": "rimraf ./.git"
   },
-  "keywords": [
-    "typescript",
-    "seed",
-    "jest"
-  ],
-  "author": "Mudit Ameta <zeusdeux@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "jest": "^23.6.0",
