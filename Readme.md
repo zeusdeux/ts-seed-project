@@ -19,9 +19,10 @@ I'd recommend taking a look at the `tsconfig.json`, `tslint.json` and `.prettier
 1. Clone this repo
 2. Run `npm install`
 3. **Remove the `prepare` script from the `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
-4. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
-5. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
+4. Run `npm init`
+5. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
 6. Code away!
+7. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
 
 ## Config overrides
 
@@ -43,3 +44,8 @@ I'd recommend taking a look at the `tsconfig.json`, `tslint.json` and `.prettier
 ### `.prettierrc`
 
 This mostly uses the defaults except for `printWidth`, `semi` and `singleQuote`
+
+### `jest`
+
+This is found under the `jest` key in `package.json`. Feel free to modify those to your liking.
+Also, `ts-jest` is configured in that subtree as well.
