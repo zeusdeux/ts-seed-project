@@ -7,8 +7,8 @@ This tries to take away some of that pain for Typescript.
 
 ## What it sets up?
 
-This project sets up a Typescript project that uses `tslint` as the linter and `prettier` as the code formatter.
-I'd recommend taking a look at the `tsconfig.json`, `tslint.json` and `.prettierrc` to understand what defaults have been setup for you.
+This project sets up a Typescript project that uses `tslint` as the linter, `prettier` as the code formatter and `jest` for testing.
+I'd recommend taking a look at the `tsconfig.json`, `tslint.json`, `.prettierrc` and `package.json['jest']` to understand what defaults have been setup for you.
 
 #### Note
 > 1. It does _not_ install _any_ type definitions so please do so after you follow the instructions in the next section.
