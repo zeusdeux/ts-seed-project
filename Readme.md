@@ -10,6 +10,9 @@ This tries to take away some of that pain for Typescript.
 This project sets up a Typescript project that uses `tslint` as the linter, `prettier` as the code formatter and `jest` for testing.
 I'd recommend taking a look at the `tsconfig.json`, `tslint.json`, `.prettierrc` and `package.json['jest']` to understand what defaults have been setup for you.
 
+It also sets up `prettier` and `tslint` to run on git commit using `husky` for a `git` `pre-commit` hook and `lint-staged` to run the actual tasks themselves.
+Dev workflow nirvana swiftly ensues!
+
 #### Note
 > 1. It does _not_ install _any_ type definitions so please do so after you follow the instructions in the next section.
 > 2. In `tsconfig.json`, `compilerOptions.composite`, `compilerOptions.declaration` and `compilerOptions.declarationMap` are turned on to add [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) support
@@ -18,7 +21,8 @@ I'd recommend taking a look at the `tsconfig.json`, `tslint.json`, `.prettierrc`
 
 1. Clone this repo
 2. Run `npm install`
-3. **Remove the `prepare` script from the `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
+3. **Remove the `prepare` script from `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
+4. **Remove the `reset-git` script from `package.json`**
 4. Run `npm init`
 5. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
 6. Code away!
