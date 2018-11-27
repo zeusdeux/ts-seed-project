@@ -7,25 +7,51 @@
     "build": "rimraf built && tsc",
     "watch": "tsc --watch",
     "lint": "tslint -p ./tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prettier": "prettier --config ./.prettierrc --write \"{src,test,bin,lib,config}/**/*.{ts,json}\"",
     "prepare": "npm i -D typescript@latest tslint@latest rimraf@latest && npm i -D --save-exact prettier@latest && npm run reset-git && npm init -y && echo '# My new project' > Readme.md",
     "reset-git": "rimraf ./.git"
   },
   "keywords": [
     "typescript",
-    "seed"
+    "seed",
+    "jest"
   ],
   "author": "Mudit Ameta <zeusdeux@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "jest": "^23.6.0",
     "prettier": "^1.14.2",
     "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.5",
     "tslint": "^5.11.0",
     "typescript": "^3.0.3"
   },
   "dependencies": {},
   "engines": {
     "node": ">=10"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/lib/",
+      "<rootDir>/src/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/**/*.ts"
+    ]
   }
 }

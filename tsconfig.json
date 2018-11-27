@@ -20,5 +20,5 @@
     "declaration": true,
     "declarationMap": true
   },
-  "include": ["src/**/*", "test/**/*", "bin/**/*", "lib/**/*", "config/**/*"]
+  "include": ["src/**/*", "bin/**/*", "lib/**/*", "config/**/*"]
 }
