@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "module": "commonjs",
-    "lib": ["ES2015", "ES2016", "ES2017", "ES2018", "ESNEXT", "DOM", "DOM.Iterable", "ScriptHost"],
+    "target": "ES2018",
+    "module": "CommonJS",
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
     "sourceMap": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
