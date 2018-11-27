@@ -6,7 +6,8 @@
     "test": "jest",
     "prettier": "prettier --config ./.prettierrc --write \"{src,test,bin,lib,config}/**/*.{ts,json}\"",
     "prepare": "npm i -D typescript@latest tslint@latest rimraf@latest && npm i -D --save-exact prettier@latest && npm run reset-git && npm init -y && echo '# My new project' > Readme.md",
-    "reset-git": "rimraf ./.git"
+    "reset-git": "rimraf ./.git",
+    "postinstall": "git init && node ./node_modules/husky/lib/installer/bin.js install"
   },
   "devDependencies": {
     "@types/jest": "^23.3.9",

@@ -23,6 +23,7 @@ Dev workflow nirvana swiftly ensues!
 2. Run `npm install`
 3. **Remove the `prepare` script from `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
 4. **Remove the `reset-git` script from `package.json`**
+4. **Remove the `postinstall` script from `package.json`**
 4. Run `npm init`
 5. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
 6. Code away!
