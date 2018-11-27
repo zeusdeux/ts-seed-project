@@ -58,7 +58,7 @@
       "tslint --fix",
       "git add"
     ],
-    "*.json": [
+    "*.{json,md}": [
       "prettier --write",
       "git add"
     ]
