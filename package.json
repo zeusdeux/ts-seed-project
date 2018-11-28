@@ -5,22 +5,13 @@
     "lint": "tslint -p ./tsconfig.json",
     "test": "jest",
     "prettier": "prettier --config ./.prettierrc --write \"{src,test,bin,lib,config}/**/*.{ts,json}\"",
-    "prepare": "npm i -D typescript@latest tslint@latest rimraf@latest && npm i -D --save-exact prettier@latest && npm run reset-git && npm init -y && echo '# My new project' > Readme.md",
+    "install-latest-dev-deps": "npm i -D @types/jest@latest husky@latest jest@latest lint-staged@latest rimraf@latest ts-jest@latest tslint@latest tslint-config-prettier@latest typescript@latest",
+    "install-exact-prettier": "npm i -D --save-exact prettier@latest",
+    "prep": "npm run install-latest-dev-deps && npm run install-exact-prettier && npm run reset-git && echo '# My new project' > Readme.md",
     "reset-git": "rimraf ./.git",
-    "postinstall": "git init && node ./node_modules/husky/lib/installer/bin.js install"
+    "postinstall": "npm run prep && git init && node ./node_modules/husky/lib/installer/bin.js install && node ./remove-unnecessary-scripts.js && rimraf remove-unnecessary-scripts.js && npm init"
   },
-  "devDependencies": {
-    "@types/jest": "^23.3.9",
-    "husky": "^1.2.0",
-    "jest": "^23.6.0",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.14.2",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^23.10.5",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.16.0",
-    "typescript": "^3.0.3"
-  },
+  "devDependencies": {},
   "dependencies": {},
   "engines": {
     "node": ">=10"
