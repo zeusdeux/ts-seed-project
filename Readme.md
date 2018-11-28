@@ -22,18 +22,17 @@ Dev workflow nirvana swiftly ensues!
 
 1. Clone this repo
 2. Run `npm install`
-3. **Remove the `prepare` script from `package.json`** since it is destructive and is run automatically by npm on `npm publish` and `npm install`
-4. **Remove the `reset-git` script from `package.json`**
-5. **Remove the `postinstall` script from `package.json`**
-6. Run `npm init`
-7. Update `package.json` to reflect your project (e.g., update `name`, `version`, `author`, `license`, `description`, `scripts`, etc)
-8. Code away!
-9. Install type definitions for your project (e.g., `npm i @types/node` if it's a backend project)
+3. Code away!
+
+No type definitions are installed as they're specific to your project.
+You can install type definitions for your project (e.g., `npm i @types/node` if it's a backend project) as you normally would.
+
+If things don't work as expected, go back to step 1.
 
 #### Note
 
-> From `package.json['jest']['roots']`, remove the directories that don't exist or aren't roots.
-> For e.g., in my personal projects, I usually remove `"<rootDir>/lib/"` as I keep my code in `src`
+> 1. From `package.json['jest']['roots']`, remove the directories that don't exist or aren't roots.
+>    For e.g., in my personal projects, I usually remove `"<rootDir>/lib/"` as I keep my code in `src`
 
 ## Config overrides
 
