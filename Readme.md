@@ -29,6 +29,8 @@ You can install type definitions for your project (e.g., `npm i @types/node` if 
 
 If things don't work as expected, go back to step 1.
 
+If you're using this to write a [lambda](https://zeit.co/docs/v2/deployments/concepts/lambdas/#conceptual-model) that will be deployed to [@zeithq's platform](https://zeit.co), then I recommend using it alongside [get-now-json](https://github.com/zeusdeux/get-now-json) which is hosted at [now-json.zdx.cat](https://now-json.zdx.cat) to scaffold out a `now.json`.
+
 #### Note
 
 > 1. From `package.json['jest']['roots']`, remove the directories that don't exist or aren't roots.
