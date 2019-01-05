@@ -4,7 +4,7 @@
     "watch": "tsc --watch",
     "lint": "tslint -p ./tsconfig.json",
     "test": "jest",
-    "prettier": "prettier --config ./.prettierrc --write \"{src,test,bin,lib,config}/**/*.{ts,json}\"",
+    "prettier": "prettier --config ./.prettierrc --write \"{src,test,bin,lib,config}/**/*.{ts,json,css,html,md}\"",
     "install-latest-dev-deps": "npm i -D @types/jest@latest husky@latest jest@latest lint-staged@latest rimraf@latest ts-jest@latest tslint@latest tslint-config-prettier@latest typescript@latest",
     "install-exact-prettier": "npm i -D --save-exact prettier@latest",
     "prep": "npm run install-latest-dev-deps && npm run install-exact-prettier && npm run reset-git && echo '# My new project' > Readme.md",
@@ -49,7 +49,7 @@
       "tslint --fix",
       "git add"
     ],
-    "*.{json,md}": [
+    "*.{json,md,html,css}": [
       "prettier --write",
       "git add"
     ]
