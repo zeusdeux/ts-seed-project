@@ -5,6 +5,11 @@
 Setting up tooling, etc always gets in the way of focusing on what you're trying to build.
 This tries to take away some of that pain for Typescript.
 
+## Goals
+
+1. Only add tooling for basic local development ergonomics
+2. Remove all traces of itself once setup
+
 ## What it sets up?
 
 This project sets up a Typescript project that uses `tslint` as the linter, `prettier` as the code formatter and `jest` for testing.
