@@ -9,7 +9,7 @@
     "install-exact-prettier": "npm i -D --save-exact prettier@latest",
     "prep": "npm run install-latest-dev-deps && npm run install-exact-prettier && npm run reset-git && echo '# My new project' > Readme.md",
     "reset-git": "rimraf ./.git",
-    "postinstall": "npm run prep && git init && node ./node_modules/husky/lib/installer/bin.js install && node ./remove-unnecessary-scripts.js && rimraf remove-unnecessary-scripts.js && npm init"
+    "postinstall": "npm run prep && git init && node ./node_modules/husky/lib/installer/bin.js install && node ./remove-unnecessary-scripts.js && rimraf remove-unnecessary-scripts.js"
   },
   "devDependencies": {},
   "dependencies": {},
