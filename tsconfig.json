@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "CommonJS",
-    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
+    "target": "es2018",
+    "module": "commonjs",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "sourceMap": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
