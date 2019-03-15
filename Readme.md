@@ -25,8 +25,14 @@ Dev workflow nirvana swiftly ensues!
 
 ## How to use this seed project
 
+## Automagically (recommended)
+
+Run `npm init @zeusdeux/ts-project <folder>` or `npx @zeusdeux/create-ts-project <folder>`
+
+## Manually
+
 1. Clone this repo
-2. Run `npm install`
+2. Run `npm install && npm init`
 3. Code away!
 
 No type definitions are installed as they're specific to your project.
