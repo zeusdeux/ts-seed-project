@@ -25,7 +25,21 @@ Dev workflow nirvana swiftly ensues!
 
 ## How to use this seed project
 
-## Automagically (recommended)
+## Using GitHub template repository
+
+Given that GitHub now [supports repository templates](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/), this repo can be used as one.
+
+1. Click on the `Use this template` button or click [on the generate link here](https://github.com/zeusdeux/ts-seed-project/generate)
+2. Give your copy of the repo a name and provide other data that GitHub prompts you for
+
+You should now have your own version of this repository. From here on —
+
+1. Clone your repo
+2. Run `npm install && npm init`
+
+and you should be ready to code away!
+
+## Using an npm initializer
 
 Run `npm init @zeusdeux/ts-project <folder>` or `npx @zeusdeux/create-ts-project <folder>`
 
